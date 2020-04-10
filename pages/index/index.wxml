@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper autoplay="true" indicator-dots="true" indicator-color="#dcdfe6" indicator-active-color="#a9a9a9">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+      <image src="{{item.url}}" data-label="{{item.label}}"bindtap="swiperClick"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="main">
+    <view class="area-item" wx:for="{{areaList}}" wx:key="index">
+      <view class="area-item-img">
+        <image class="img" src="{{item.url}}"></image>
+      </view>
+      <text>{{item.label}}</text>
+    </view>
+  </view>
+
+  <view class="hot">
+    <text>- 热门推荐 -</text>
+    <view class="scroll-view">
+      <scroll-view class="scroll-view_x" scroll-x="true" bindscroll="scroll">
+        <view class="hot-item" wx:for="{{hotList}}" wx:key="index">
+          <image id="{{index}}" src="{{item.url}}"></image>
+          <text class="hot-item-label">{{item.label}}</text>
+          <view class="hot-item-no">{{index + 1}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="other">
+    <text>- 猜你喜欢 -</text>
+    <view class="other-title">
+      <button plain="true" class="{{ activedTag === item.tag? 'actived':''}}" wx:for="{{likeList}}" wx:key="index" bindtap="chooseLike" data-tag="{{item.tag}}" data-detail="{{item.itemList}}">{{item.tag}}</button>
+    </view>
+    <view class="other-items">
+      <view class="other-item" wx:for="{{selectedList}}" wx:key="index">
+        <view class="other-item-img">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="other-item-desc">
+          <text>{{item.name}}</text>
+          <view class="other-item-desc-tag">
+            <text wx:for="{{item.eats}}" wx:key="index" class="tag-item">{{item}}</text>
+          </view>
+          <text class="other-item-score">{{item.activity}}</text>
+          <text class="other-item-address">{{item.address}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

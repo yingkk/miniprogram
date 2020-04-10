@@ -1,0 +1,5 @@
+<view> 
+  当前是：{{currentLabel}}
+    详情：     {{currentDetail.title}}
+
+</view>
