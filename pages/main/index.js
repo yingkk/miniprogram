@@ -13,9 +13,18 @@ Page({
         address: "公园",
         tips: "提供画板支架",
         detail: {
-          url: "../../images/swiper1.jpeg",
+          poster: "../../images/swiper1.jpeg",
+          url: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
           text: "春意"
-        }
+        },
+        comments: [
+          {
+            userIcon: "../../images/area3.jpg",
+            userName: "悦",
+            level: 4,
+            content: "好评！"
+          }
+        ]
       },
       {
         label: "nature",
@@ -24,7 +33,8 @@ Page({
         address: "花园",
         tips: "提供画板支架",
         detail: {
-          url: "../../images/swiper1.jpeg",
+          poster: "../../images/swiper1.jpeg",
+          url: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
           text: "春意"
         }
       }, {
@@ -34,7 +44,8 @@ Page({
         address: "野外",
         tips: "",
         detail: {
-          url: "../../images/swiper1.jpeg",
+          poster: "../../images/swiper1.jpeg",
+          url: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400",
           text: "春意"
         }
       }, {
@@ -44,7 +55,8 @@ Page({
         address: "公园",
         tips: "提供午餐",
         detail: {
-          url: "../../images/swiper1.jpeg",
+          poster: "../../images/swiper1.jpeg",
+          url: "http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a02010004004",
           text: "春意"
         }
       }

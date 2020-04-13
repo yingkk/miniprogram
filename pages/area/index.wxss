@@ -1,0 +1,8 @@
+.area-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+.item-img  image{
+  width: 100%;
+}

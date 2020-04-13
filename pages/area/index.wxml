@@ -1,0 +1,9 @@
+<view class="area-item">
+  <view class="item-img">
+    <image src="{{currentAreaDetail.url}}"> </image>
+    <image src="{{currentAreaDetail.url}}"> </image>
+  </view>
+  <view>
+    {{currentAreaName}} {{currentAreaDetail.desc}}
+  </view>
+</view>

@@ -44,42 +44,52 @@ Page({
       }
     ],
     areaList: [{
+        id: 1,
         url: "../../images/area1.jpg",
         label: "大象宝宝"
       },
       {
+        id: 2,
         url: "../../images/area2.jpg",
         label: "牛大厨"
       },
       {
+        id: 3,
         url: "../../images/area3.jpg",
         label: "小蓝狗"
       },
       {
+        id: 4,
         url: "../../images/area4.jpeg",
         label: "喵咪"
       },
       {
+        id: 5,
         url: "../../images/area5.jpg",
         label: "毛驴儿"
       },
       {
+        id: 6,
         url: "../../images/area6.jpeg",
         label: "樱花树"
       },
       {
+        id: 7,
         url: "../../images/area7.jpg",
         label: "红枫叶"
       },
       {
+        id: 8,
         url: "../../images/area8.jpg",
         label: "苹果树"
       },
       {
+        id: 9,
         url: "../../images/area9.jpg",
         label: "椰子树"
       },
       {
+        id: 10,
         url: "../../images/area10.jpg",
         label: "竹子"
       }
@@ -188,10 +198,17 @@ Page({
       selectedList: e.currentTarget.dataset.detail
     })
   },
-  swiperClick(e) {
+  swiperClickHandler(e) {
     const currentLabel = e.currentTarget.dataset.label;
     wx.navigateTo({
       url: "../main/index?currentLabel=" + currentLabel,
+    })
+  },
+  areaClickHandler(e) {
+    const currentAreaId = e.currentTarget.dataset.id;
+    const currentAreaName = e.currentTarget.dataset.name;
+    wx.navigateTo({
+      url: "../area/index?id=" + currentAreaId+ "&name=" +currentAreaName,
     })
   },
   scroll(e) {

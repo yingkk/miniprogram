@@ -2,13 +2,13 @@
 <view class="container">
   <swiper autoplay="true" indicator-dots="true" indicator-color="#dcdfe6" indicator-active-color="#a9a9a9">
     <swiper-item wx:for="{{swiperList}}" wx:key="index">
-      <image src="{{item.url}}" data-label="{{item.label}}"bindtap="swiperClick"></image>
+      <image src="{{item.url}}" data-label="{{item.label}}" bindtap="swiperClickHandler"></image>
     </swiper-item>
   </swiper>
 
   <view class="main">
     <view class="area-item" wx:for="{{areaList}}" wx:key="index">
-      <view class="area-item-img">
+      <view class="area-item-img" data-id="{{item.id}}" data-name="{{item.label}}" bindtap="areaClickHandler">
         <image class="img" src="{{item.url}}"></image>
       </view>
       <text>{{item.label}}</text>

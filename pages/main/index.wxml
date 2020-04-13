@@ -1,5 +1,35 @@
-<view> 
-  当前是：{{currentLabel}}
-    详情：     {{currentDetail.title}}
+<view class="main-detail">
+	<view class="detail-video">
+		<video controls="true" poster="{{currentDetail.detail.poster}}"  src="{{currentDetail.detail.url}}"> </video>
+	</view>
+	<view class="detail-desc">
+		<view class="title">
+			{{currentDetail.title}} {{currentDetail.description}}
+		</view>
+		<view class="address">地址：{{currentDetail.address}}</view>
+		<view class="other">{{currentDetail.tips}}</view>
+	</view>
+
+	<view class="detail-comment">
+		<view class="comment-all">
+			<view>{{currentDetail.title}}评价({{currentDetail.comments.length}})</view>
+			<view>全部评价</view>
+		</view>
+		<view class="comment-user">
+			<view class="user-icon">
+				<image src="{{currentDetail.comments[0].userIcon}}"></image>
+			</view>
+			<view class="user-name">{{currentDetail.comments[0].userName}}</view>
+			<view class="user-level">{{currentDetail.comments[0].level}}</view>
+		</view>
+		<view class="comment-content">{{currentDetail.comments[0].content}}</view>
+	</view>
+
+	<view class="detail-info">
+		<text class="info-title">{{currentDetail.title}}详情</text>
+		<view>
+			<image></image>
+		</view>
+	</view>
 
 </view>
